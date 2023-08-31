@@ -1,0 +1,66 @@
+/* Default styles for larger screens */
+.polaroid {
+  position: relative;
+  width: 140px;
+  height: 190px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.polaroid::before,
+.polaroid::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.polaroid::before {
+  top: 0;
+  left: 0;
+  border-width: 15px 15px 0 0;
+  border-color: brown transparent transparent transparent;
+}
+
+.polaroid::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 0 15px 15px;
+  border-color: transparent transparent brown transparent;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .polaroid {
+    width: 70px; /* Adjust this size as needed */
+    height: 95px; /* Adjust this size as needed */
+    font-size: 0.5rem;
+    margin: 20px 20px;
+  }
+
+  .polaroid::before,
+  .polaroid::after {
+    border-width: 7.5px 7.5px 0 0; /* Adjust this size as needed */
+  }
+
+  .polaroid::before {
+    border-color: brown transparent transparent transparent;
+  }
+
+  .polaroid::after {
+    border-width: 0 0 7.5px 7.5px; /* Adjust this size as needed */
+    border-color: transparent transparent brown transparent;
+  }
+
+  .polaroid img {
+    max-width: 50%; /* Adjust this size as needed */
+    max-height: 50%; /* Adjust this size as needed */
+  }
+}

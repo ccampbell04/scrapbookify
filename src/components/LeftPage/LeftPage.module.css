@@ -1,0 +1,22 @@
+.left-page {
+  background-color: #e1d3c0;
+  height: 80vh;
+  width: 10vw;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 2.5vw solid #d7c8b4;
+  border-right: 2px solid black;
+}
+
+.page-number {
+  color: black;
+  position: absolute;
+  bottom: 17vh;
+}

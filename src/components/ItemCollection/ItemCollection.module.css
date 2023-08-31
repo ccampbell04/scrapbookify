@@ -1,0 +1,6 @@
+.itemCollection {
+  float: left;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
