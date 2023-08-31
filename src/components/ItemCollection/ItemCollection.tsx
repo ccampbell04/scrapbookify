@@ -1,5 +1,5 @@
 import Polaroid from '../Polaroid/Polaroid';
-import styles from './itemCollection.module.css';
+import styles from './ItemCollection.module.css';
 
 async function getItems(url: string, accessToken: string | undefined) {
   const headers = {
